@@ -1,4 +1,4 @@
---VERSION:1.0-beta
+--VERSION:1.1-beta
 --CHANGELOG_START
 - Perbaikan bug saat navigasi Node
 - Optimasi pemakaian baterai Jieshuo
