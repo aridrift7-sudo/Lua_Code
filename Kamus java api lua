@@ -1,114 +1,399 @@
+local hcdhjfh=[[
 --VERSION:1.1-beta
 --CHANGELOG_START
 - Perbaikan bug saat navigasi Node
 - Optimasi pemakaian baterai Jieshuo
 - Penambahan fungsi API baru
---CHANGELOG_END
-【Informasi Class】
-com.androlua.LuaApplication
-【Superclass】
-android.app.Application
-【Interfaces】
-com.androlua.LuaContext
-【Metode Konstruksi】
-public com.androlua.LuaApplication()
-【Bidang (Field)】
-【Metode】
-public native void com.androlua.LuaApplication.call(java.lang.String,java.lang.Object[])
-public native java.lang.String com.androlua.LuaApplication.callStringFunction(java.lang.String,java.lang.Object[])
-public native boolean com.androlua.LuaApplication.checkInfo()
-public final native boolean com.androlua.LuaApplication.checkVip()
-public native void com.androlua.LuaApplication.clearAllActivity()
-public native void com.androlua.LuaApplication.clearAndExit()
-public native java.lang.Object com.androlua.LuaApplication.doAsset(java.lang.String,java.lang.Object[])
-public native java.lang.Object com.androlua.LuaApplication.doFile(java.lang.String,java.lang.Object[])
-public native java.lang.Object com.androlua.LuaApplication.get(java.lang.String)
-public native java.util.ArrayList com.androlua.LuaApplication.getAllApp()
-public static native java.util.ArrayList com.androlua.LuaApplication.getAppList()
-public native java.lang.String com.androlua.LuaApplication.getBackupDir()
-public native java.util.ArrayList com.androlua.LuaApplication.getClassLoaders()
-public native java.lang.String com.androlua.LuaApplication.getCmdDir()
-public native java.lang.String com.androlua.LuaApplication.getCmdPath(java.lang.String)
-public native android.content.Context com.androlua.LuaApplication.getContext()
-public native java.lang.String com.androlua.LuaApplication.getDeLuaPath(java.lang.String)
-public native java.lang.String com.androlua.LuaApplication.getDownloadDir()
-public native java.lang.String com.androlua.LuaApplication.getDownloadPath(java.lang.String)
-public static native java.lang.String com.androlua.LuaApplication.getFileName(java.lang.String,java.lang.String)
-public native java.lang.String com.androlua.LuaApplication.getGesturePath(java.lang.String,java.lang.String)
-public native java.lang.String com.androlua.LuaApplication.getGesturesDir()
-public native java.lang.String com.androlua.LuaApplication.getGesturesDir(java.lang.String)
-public native java.util.Map com.androlua.LuaApplication.getGlobalData()
-public native int com.androlua.LuaApplication.getHeight()
-public native java.lang.String com.androlua.LuaApplication.getHelpersDir()
-public native java.lang.String com.androlua.LuaApplication.getHelpersDir(java.lang.String)
-public native java.lang.String com.androlua.LuaApplication.getHelpersPath(java.lang.String,java.lang.String)
-public native java.lang.String com.androlua.LuaApplication.getHotKeysDir()
-public native java.lang.String com.androlua.LuaApplication.getHotKeysDir(java.lang.String)
-public native java.lang.String com.androlua.LuaApplication.getHotKeysPath(java.lang.String,java.lang.String)
-public native java.lang.String com.androlua.LuaApplication.getId()
-public static native com.androlua.LuaApplication com.androlua.LuaApplication.getInstance()
-public native java.lang.String com.androlua.LuaApplication.getLabelsDir()
-public native java.lang.String com.androlua.LuaApplication.getLabelsDir(java.lang.String)
-public native java.lang.String com.androlua.LuaApplication.getLibDir()
-public native java.util.HashMap com.androlua.LuaApplication.getLibrarys()
-public native java.lang.String com.androlua.LuaApplication.getLocalDir()
-public native java.lang.String com.androlua.LuaApplication.getLuaCpath()
-public native java.lang.String com.androlua.LuaApplication.getLuaDir()
-public native java.lang.String com.androlua.LuaApplication.getLuaDir(java.lang.String)
-public native java.lang.String com.androlua.LuaApplication.getLuaExtDir()
-public native java.lang.String com.androlua.LuaApplication.getLuaExtDir(java.lang.String)
-public native java.lang.String com.androlua.LuaApplication.getLuaExtPath(java.lang.String)
-public native java.lang.String com.androlua.LuaApplication.getLuaExtPath(java.lang.String,java.lang.String)
-public native java.lang.String com.androlua.LuaApplication.getLuaLpath()
-public native java.lang.String com.androlua.LuaApplication.getLuaPath()
-public native java.lang.String com.androlua.LuaApplication.getLuaPath(java.lang.String)
-public native java.lang.String com.androlua.LuaApplication.getLuaPath(java.lang.String,java.lang.String)
-public native com.luajava.LuaState com.androlua.LuaApplication.getLuaState()
-public native java.lang.String com.androlua.LuaApplication.getMdDir()
-public native java.lang.String com.androlua.LuaApplication.getNamesDir()
-public native java.lang.String com.androlua.LuaApplication.getNamesPath(java.lang.String)
-public native java.lang.String com.androlua.LuaApplication.getNaviDir()
-public native java.lang.String com.androlua.LuaApplication.getNaviPath(java.lang.String)
-public native java.lang.String com.androlua.LuaApplication.getNotesDir()
-public native java.lang.String com.androlua.LuaApplication.getNotesPath(java.lang.String)
-public native java.lang.String com.androlua.LuaApplication.getOdexDir()
-public native java.lang.String com.androlua.LuaApplication.getPluginsDir()
-public native java.lang.String com.androlua.LuaApplication.getPluginsDir(java.lang.String)
-public native java.lang.String com.androlua.LuaApplication.getPluginsPath(java.lang.String,java.lang.String)
-public native android.content.res.Resources com.androlua.LuaApplication.getResources()
-public native java.lang.String com.androlua.LuaApplication.getResourcesDir()
-public native java.lang.String com.androlua.LuaApplication.getResourcesDir(java.lang.String)
-public native java.lang.Object com.androlua.LuaApplication.getSharedData(java.lang.String)
-public native java.lang.Object com.androlua.LuaApplication.getSharedData(java.lang.String,java.lang.Object)
-public native android.content.SharedPreferences com.androlua.LuaApplication.getSharedPreferences(java.lang.String,int)
-public native java.lang.String com.androlua.LuaApplication.getSoundsDir()
-public native java.lang.String com.androlua.LuaApplication.getSoundsDir(java.lang.String)
-public native java.lang.Object com.androlua.LuaApplication.getSystemService(java.lang.String)
-public native java.lang.String com.androlua.LuaApplication.getTimerDir()
-public native java.lang.String com.androlua.LuaApplication.getTimerPath(java.lang.String)
-public native java.lang.String com.androlua.LuaApplication.getToolsDir()
-public native java.lang.String com.androlua.LuaApplication.getToolsDir(java.lang.String)
-public native android.net.Uri com.androlua.LuaApplication.getUriForFile(java.io.File)
-public native android.net.Uri com.androlua.LuaApplication.getUriForPath(java.lang.String)
-public native java.lang.String com.androlua.LuaApplication.getUserId(java.lang.String)
-public native java.lang.String com.androlua.LuaApplication.getUserName(java.lang.String)
-public native int com.androlua.LuaApplication.getWidth()
-public native boolean com.androlua.LuaApplication.inJieshuoActivity()
-public final native void com.androlua.LuaApplication.init()
-public final native boolean com.androlua.LuaApplication.isAbc()
-public final native boolean com.androlua.LuaApplication.isVip()
-public native void com.androlua.LuaApplication.onCreate()
-public native byte[] com.androlua.LuaApplication.readAsset(java.lang.String)
-public native void com.androlua.LuaApplication.regGc(com.androlua.LuaGcable)
-public native android.content.Intent com.androlua.LuaApplication.registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)
-public native android.content.Intent com.androlua.LuaApplication.registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter,int)
-public native android.content.Intent com.androlua.LuaApplication.registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter,java.lang.String,android.os.Handler)
-public native android.content.Intent com.androlua.LuaApplication.registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter,java.lang.String,android.os.Handler,int)
-public native void com.androlua.LuaApplication.sendError(java.lang.String,java.lang.Exception)
-public native void com.androlua.LuaApplication.sendMsg(java.lang.String)
-public native void com.androlua.LuaApplication.set(java.lang.String,java.lang.Object)
-public static native void com.androlua.LuaApplication.setAppList(java.util.ArrayList)
-public native void com.androlua.LuaApplication.setDebug(boolean)
-public native boolean com.androlua.LuaApplication.setSharedData(java.lang.String,java.lang.Object)
-public native void com.androlua.LuaApplication.setVip(boolean)
-public native void com.androlua.LuaApplication.updateAllActivity()
+--CHANGELOG_END]]
+
+local currentVersion="1.1-beta"
+local repoUrl="https://raw.githubusercontent.com/aridrift7-sudo/Lua_Code/refs/heads/main/Kamus%20java%20api%20lua"
+
+local function runOriginalCode()
+
+require "import"
+import "java.util.HashMap"
+import "android.content.Context"
+import "java.lang.*"
+import "com.androlua.*"
+import "android.widget.*"
+import "java.lang.reflect.Modifier"
+import "dalvik.system.DexFile"
+
+local function getAllClasses()
+  local classList={}
+  local uniqueClasses={}
+
+  local function parseJson(jsonObj, prefix)
+    if not jsonObj then return end
+    local sKeys,keys=pcall(function() return jsonObj.keys() end)
+    if not sKeys or not keys then return end
+    while keys.hasNext() do
+      local key=tostring(keys.next())
+      local firstChar=key:sub(1,1)
+      if firstChar>='A' and firstChar<='Z' then
+        local full=prefix..key
+        if not uniqueClasses[full] then
+          uniqueClasses[full]=true
+          table.insert(classList,full)
+        end
+      end
+      local sNext,nextObj=pcall(function() return jsonObj.getJSONObject(key) end)
+      if sNext and nextObj then
+        parseJson(nextObj,prefix..key..".")
+      end
+    end
+  end
+
+  local sDex,dexFile=pcall(function() return DexFile(service.getPackageCodePath()) end)
+  if sDex and dexFile then
+    local entries=dexFile.entries()
+    while entries.hasMoreElements() do
+      local target=tostring(entries.nextElement())
+      if not target:find("^android") and not target:find("^java") and not target:find("^kotlin") then
+        local sLoad,cls=pcall(function() return service.getClassLoader().loadClass(target) end)
+        if sLoad and cls then
+          local sf,fields=pcall(function() return cls.getDeclaredFields() end)
+          if sf and fields then
+            local jsonFields,mapFields={},{}
+            for i=0,#fields-1 do
+              local f=fields[i]
+              if Modifier.isStatic(f.getModifiers()) then
+                local fType=tostring(f.getType())
+                if fType=="class org.json.JSONObject" then
+                  table.insert(jsonFields,f)
+                elseif fType=="class java.util.HashMap" then
+                  table.insert(mapFields,f)
+                end
+              end
+            end
+
+            if #jsonFields>0 or #mapFields>0 then
+              local sm,methods=pcall(function() return cls.getDeclaredMethods() end)
+              if sm and methods then
+                local sBind,bCls=pcall(luajava.bindClass,target)
+                for i=0,#methods-1 do
+                  local m=methods[i]
+                  if Modifier.isStatic(m.getModifiers()) then
+                    local params=m.getParameterTypes()
+                    if params and #params==1 then
+                      local pType=tostring(params[0])
+                      if pType:find("Context") then
+                        m.setAccessible(true)
+                        pcall(function() m.invoke(nil,{service}) end)
+                        if sBind and bCls then pcall(function() bCls[m.getName()](service) end) end
+                      elseif pType:find("String") or pType:find("CharSequence") then
+                        m.setAccessible(true)
+                        pcall(function() m.invoke(nil,{"android.widget.Button"}) end)
+                        if sBind and bCls then pcall(function() bCls[m.getName()]("android.widget.Button") end) end
+                      end
+                    end
+                  end
+                end
+              end
+              
+              for i=1,#jsonFields do
+                local jf=jsonFields[i]
+                jf.setAccessible(true)
+                local sJ,jObj=pcall(function() return jf.get(nil) end)
+                if sJ and jObj then parseJson(jObj,"") end
+              end
+
+              for i=1,#mapFields do
+                local mf=mapFields[i]
+                mf.setAccessible(true)
+                local sM,mObj=pcall(function() return mf.get(nil) end)
+                if sM and mObj and type(mObj)=="userdata" then
+                  local sV,vals=pcall(function() return mObj.values().iterator() end)
+                  if sV and vals then
+                    while vals.hasNext() do
+                      local arr=vals.next()
+                      if arr and type(arr)=="userdata" then
+                        local sSz,sz=pcall(function() return arr.size() end)
+                        if sSz and type(sz)=="number" then
+                          for k=0,sz-1 do
+                            local sI,item=pcall(function() return arr.get(k) end)
+                            if sI and item then
+                              local strItem=tostring(item)
+                              if strItem:find("%.") and not uniqueClasses[strItem] then
+                                uniqueClasses[strItem]=true
+                                table.insert(classList,strItem)
+                              end
+                            end
+                          end
+                        end
+                      end
+                    end
+                  end
+                end
+              end
+            end
+
+            if #classList>0 then break end
+          end
+        end
+      end
+    end
+  end
+
+  if #classList==0 then
+    classList={
+      "com.androlua.LuaActivity","com.androlua.LuaService",
+      "com.nirenr.talkman.TalkManAccessibilityService",
+      "com.androlua.LuaDialog","com.androlua.Http",
+      "android.widget.LinearLayout","android.widget.ListView",
+      "android.widget.EditText","android.widget.Button",
+      "java.lang.String","java.lang.Math","java.io.File"
+    }
+  end
+
+  local priority={
+    ["com.androlua.LuaActivity"]=1,
+    ["com.androlua.LuaService"]=2,
+    ["com.nirenr.talkman.TalkManAccessibilityService"]=3,
+    ["com.androlua.LuaDialog"]=4,
+    ["com.androlua.Http"]=5
+  }
+
+  table.sort(classList,function(a,b)
+    local pA=priority[a] or (a:find("^com%.androlua%.") and 10 or 999)
+    local pB=priority[b] or (b:find("^com%.androlua%.") and 10 or 999)
+    if pA~=pB then return pA<pB end
+    return a<b
+  end)
+
+  return classList
+end
+
+local function getClassDetailsArray(className)
+  local success,cls=pcall(function() return service.getClassLoader().loadClass(className) end)
+  if not success then return {{"Gagal memuat Class","info"}} end
+  local details={}
+  table.insert(details,{"【Informasi Class】","info"})
+  table.insert(details,{className,"info"})
+  
+  local sSuper,superClass=pcall(function() return cls.getSuperclass() end)
+  if sSuper and superClass then
+    table.insert(details,{"【Superclass】","superclass"})
+    table.insert(details,{superClass.getName(),"superclass"})
+  end
+  
+  local sInt,interfaces=pcall(function() return cls.getInterfaces() end)
+  if sInt and interfaces and #interfaces>0 then
+    table.insert(details,{"【Interfaces】","interface"})
+    for i=0,#interfaces-1 do table.insert(details,{interfaces[i].getName(),"interface"}) end
+  end
+  
+  table.insert(details,{"【Metode Konstruksi】","constructor"})
+  local sc,constructors=pcall(function() return cls.getConstructors() end)
+  if sc and constructors then
+    for i=0,#constructors-1 do
+      table.insert(details,{tostring(constructors[i]),"constructor"})
+    end
+  end
+  
+  table.insert(details,{"【Bidang (Field)】","field"})
+  local sf,fields=pcall(function() return cls.getDeclaredFields() end)
+  if sf and fields then
+    for i=0,#fields-1 do
+      local f=fields[i]
+      local mod=f.getModifiers()
+      local t=Modifier.isStatic(mod) and "static_field" or "field"
+      if Modifier.isPublic(mod) then
+        table.insert(details,{tostring(f),t})
+      end
+    end
+  end
+  
+  table.insert(details,{"【Metode】","method"})
+  local sm,methods=pcall(function() return cls.getDeclaredMethods() end)
+  if sm and methods then
+    for i=0,#methods-1 do
+      local m=methods[i]
+      local mod=m.getModifiers()
+      local t=Modifier.isStatic(mod) and "static_method" or "method"
+      if Modifier.isPublic(mod) then
+        table.insert(details,{tostring(m),t})
+      end
+    end
+  end
+  return details
+end
+
+local apiList=getAllClasses()
+local layout={
+  LinearLayout;
+  orientation="vertical";
+  {
+    EditText;
+    id="searchApi";
+    layout_width="fill";
+    hint="Cari Class... (Ketik path lengkap untuk Injeksi Dinamis)";
+  };
+  {
+    ListView;
+    id="listApi";
+    layout_width="fill";
+    layout_height="fill";
+    fastScrollEnabled=true;
+  }
+}
+
+local dlg=LuaDialog(service)
+dlg.setTitle("KamusJieshuo Java API")
+dlg.setView(loadlayout(layout))
+listApi.adapter=ArrayAdapter(service,android.R.layout.simple_list_item_1,apiList)
+
+searchApi.addTextChangedListener{
+  onTextChanged=function(s)
+    local kw=tostring(s):lower()
+    local fil={}
+    for i=1,#apiList do
+      if apiList[i]:lower():find(kw,1,true) then
+        table.insert(fil,apiList[i])
+      end
+    end
+    listApi.adapter.clear()
+    listApi.adapter.addAll(fil)
+  end
+}
+
+listApi.onItemClick=function(l,v,i)
+  local selectedClass=listApi.adapter.getItem(i)
+  local detailsArray=getClassDetailsArray(selectedClass)
+  local currentFilter="all"
+  
+  local detailDlg=LuaDialog(service)
+  detailDlg.setTitle(selectedClass)
+  local dLayout={
+    LinearLayout;
+    orientation="vertical";
+    padding="8dp";
+    {
+      EditText;
+      id="searchDetail";
+      layout_width="fill";
+      hint="Cari detail...";
+    };
+    {
+      Button;
+      id="btnFilter";
+      layout_width="fill";
+      text="Filter: Semua";
+    };
+    {
+      ListView;
+      id="listDetail";
+      layout_width="fill";
+      layout_height="fill";
+    }
+  }
+  detailDlg.setView(loadlayout(dLayout))
+  
+  local adapterDetail=ArrayAdapter(service,android.R.layout.simple_list_item_1,{})
+  listDetail.adapter=adapterDetail
+  
+  local function updateDetailList()
+    local kw=tostring(searchDetail.getText()):lower()
+    local fil={}
+    for n=1,#detailsArray do
+      local text,type=detailsArray[n][1],detailsArray[n][2]
+      local isMatch=(currentFilter=="all" or type=="info" or type==currentFilter)
+      if isMatch and (text:lower():find(kw,1,true) or text:find("【")) then
+        table.insert(fil,text)
+      end
+    end
+    adapterDetail.clear()
+    adapterDetail.addAll(fil)
+  end
+  
+  searchDetail.addTextChangedListener{
+    onTextChanged=function()
+      updateDetailList()
+    end
+  }
+  
+  btnFilter.onClick=function()
+    local fItems={"all","superclass","interface","constructor","field","static_field","method","static_method"}
+    local fLabels={"Semua","Superclass","Interface","Konstruksi","Field","Static Field","Method","Static Method"}
+    
+    local filterDlg=LuaDialog(service)
+    filterDlg.setTitle("Pilih Kategori")
+    local fList=ListView(service)
+    fList.adapter=ArrayAdapter(service,android.R.layout.simple_list_item_1,fLabels)
+    filterDlg.setView(fList)
+    
+    fList.onItemClick=function(fl,fv,fPos)
+      local title=fLabels[fPos+1]
+      currentFilter=fItems[fPos+1]
+      btnFilter.setText("Filter: "..title)
+      updateDetailList()
+      filterDlg.dismiss()
+      return true
+    end
+    filterDlg.show()
+  end
+  
+  updateDetailList()
+  
+  listDetail.onItemClick=function(ld,vd,id)
+    local sInfo=tostring(adapterDetail.getItem(id))
+    if not sInfo:find("【") then
+      service.copy(sInfo)
+      service.speak("Disalin")
+    end
+    return true
+  end
+  
+  detailDlg.setButton("Salin Semua",function()
+    local ft=""
+    for n=1,#detailsArray do
+      ft=ft..detailsArray[n][1].."\n"
+    end
+    service.copy(ft)
+    service.speak("Salin Berhasil")
+  end)
+  
+  detailDlg.setButton2("Tutup",nil)
+  detailDlg.show()
+  return true
+end
+
+dlg.onDismiss=function()
+  this.postSpeak(680,"Created by: Ari Joe")
+end
+dlg.show()
+end
+this.speak("Sedang memuat, silahkan tunggu")
+Http.get(repoUrl, function(code, content)
+  if code==200 and content then
+    local onlineVersion=content:match("%-%-VERSION:([^\n\r]+)")
+    if onlineVersion and onlineVersion~=currentVersion then
+      local changelog=content:match("%-%-CHANGELOG_START(.-)%-%-CHANGELOG_END") or "\n- Tidak ada catatan spesifik."
+      local dialog=LuaDialog(service)
+      dialog.setTitle("Pembaruan Skrip Tersedia")
+      dialog.setMessage("Versi Baru: "..onlineVersion.."\nCatatan Pembaruan:"..changelog)
+      dialog.setButton("Perbarui", function()
+        dialog.dismiss()
+        local scriptPath=debug.getinfo(1,"S").source:match("^@?(.*)$")
+        local file=io.open(scriptPath,"w")
+        if file then
+          file:write(content)
+          file:close()
+          service.speak("Skrip berhasil diperbarui. Silakan muat ulang.")
+        else
+          service.speak("Gagal menyimpan pembaruan. Periksa perizinan.")
+        end
+      end)
+      dialog.setButton2("Nanti", function()
+        dialog.dismiss()
+        runOriginalCode()
+      end)
+      dialog.show()
+    else
+      runOriginalCode()
+    end
+  else
+    runOriginalCode()
+  end
+end)
