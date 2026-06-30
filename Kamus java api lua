@@ -1,5 +1,5 @@
 local hcdhjfh=[[
---VERSION:1.1-beta
+--VERSION:1.2-beta
 --CHANGELOG_START
 - Perbaikan bug saat navigasi Node
 - Optimasi pemakaian baterai Jieshuo
