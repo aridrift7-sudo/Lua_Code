@@ -5,11 +5,9 @@ local hcdhjfh=[[
 - Optimasi pemakaian baterai Jieshuo
 - Penambahan fungsi API baru
 --CHANGELOG_END]]
-
-local currentVersion="1.1-beta"
+local scriptPath=debug.getinfo(1,"S").source:match("^@?(.*)$")
+local currentVersion="1.2-beta"
 local repoUrl="https://raw.githubusercontent.com/aridrift7-sudo/Lua_Code/refs/heads/main/Kamus%20java%20api%20lua"
-
-local function runOriginalCode()
 
 require "import"
 import "java.util.HashMap"
@@ -19,7 +17,7 @@ import "com.androlua.*"
 import "android.widget.*"
 import "java.lang.reflect.Modifier"
 import "dalvik.system.DexFile"
-
+local function runOriginalCode()
 local function getAllClasses()
   local classList={}
   local uniqueClasses={}
@@ -375,12 +373,11 @@ Http.get(repoUrl, function(code, content)
       dialog.setMessage("Versi Baru: "..onlineVersion.."\nCatatan Pembaruan:"..changelog)
       dialog.setButton("Perbarui", function()
         dialog.dismiss()
-        local scriptPath=debug.getinfo(1,"S").source:match("^@?(.*)$")
         local file=io.open(scriptPath,"w")
         if file then
           file:write(content)
           file:close()
-          service.speak("Skrip berhasil diperbarui. Silakan muat ulang.")
+          service.postSpeak(500,"Skrip berhasil diperbarui. Silakan muat ulang.")
         else
           service.speak("Gagal menyimpan pembaruan. Periksa perizinan.")
         end
