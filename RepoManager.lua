@@ -1,4 +1,4 @@
---VERSION:1.0
+--VERSION:1.99
 --CHANGELOG_START
 -- Rilis Awal Integrasi Penuh Manager dan Login
 --CHANGELOG_END
